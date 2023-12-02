@@ -1,6 +1,6 @@
 'use client';
 
-import { adminNavOptions, navOptions } from '@/utils';
+import { navOptions } from '@/utils';
 import { Fragment } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
