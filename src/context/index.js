@@ -2,7 +2,6 @@
 
 'use client';
 
-import Cookies from 'js-cookie';
 import { usePathname, useRouter } from 'next/navigation';
 import { createContext, useEffect, useState } from 'react';
 

@@ -26,16 +26,3 @@ export const navOptions = [
     path: '/product/chat',
   },
 ];
-
-export const adminNavOptions = [
-  {
-    id: 'adminListing',
-    label: 'Manage All Products',
-    path: '/admin-view/all-products',
-  },
-  {
-    id: 'adminNewProduct',
-    label: 'Add New Product',
-    path: '/admin-view/add-product',
-  },
-];
