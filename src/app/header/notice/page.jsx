@@ -18,8 +18,8 @@ export default function Notice() {
                 alt="event1"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Event 1
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-black rounded-md px-2">
+                Event: 1
               </h1>
             </div>
           </a>
@@ -33,8 +33,8 @@ export default function Notice() {
                 alt="event2"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                event2
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-black rounded-md px-2">
+                Event: 2
               </h1>
 
             </div>
