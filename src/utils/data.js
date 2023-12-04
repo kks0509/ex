@@ -366,4 +366,9 @@ export const data = {
           description: '르세라핌 홍은채 착용',
         },
       ],
+      
+      notice: [
+        { id: '1', name: '공지사항 1', content: '이것은 첫 번째 공지사항입니다.' },
+        { id: '2', name: '공지사항 2', content: '이것은 두 번째 공지사항입니다.' },
+      ]
   }

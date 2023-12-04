@@ -67,7 +67,7 @@ export default function Navbar() {
             onClick={() => router.push('/')}
             className="flex items-center cursor-pointer"
           >
-            <span className="slef-center text-3xl font-semibold whitespace-nowrap">
+            <span className="slef-center text-3xl text-black font-semibold whitespace-nowrap">
               Z.P.G
             </span>
           </div>
