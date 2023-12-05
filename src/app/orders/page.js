@@ -1,60 +1,19 @@
+//주문 상세내역
+//미완성
+
 "use client";
 
 import { GlobalContext } from "@/context";
-import { getAllOrdersForUser } from "@/services/order";
 import { useRouter } from "next/navigation";
-import { useContext, useEffect } from "react";
-import { PulseLoader } from "react-spinners";
-import { toast } from "react-toastify";
+import { useContext } from "react";
+
 
 export default function Orders() {
   const {
-    user,
-    pageLevelLoader,
-    setPageLevelLoader,
     allOrdersForUser,
-    setAllOrdersForUser,
   } = useContext(GlobalContext);
 
   const router = useRouter();
-
-  async function extractAllOrders() {
-    setPageLevelLoader(true);
-    const res = await getAllOrdersForUser(user?._id);
-
-    if (res.success) {
-      setPageLevelLoader(false);
-
-      setAllOrdersForUser(res.data);
-      toast.success(res.message, {
-        position: toast.POSITION.TOP_RIGHT,
-      });
-    } else {
-      setPageLevelLoader(false);
-      toast.error(res.message, {
-        position: toast.POSITION.TOP_RIGHT,
-      });
-    }
-  }
-
-  useEffect(() => {
-    if (user !== null) extractAllOrders();
-  }, [user]);
-
-  console.log(allOrdersForUser);
-
-  if (pageLevelLoader) {
-    return (
-      <div className="w-full min-h-screen flex justify-center items-center">
-        <PulseLoader
-          color={"#000000"}
-          loading={pageLevelLoader}
-          size={30}
-          data-testid="loader"
-        />
-      </div>
-    );
-  }
 
   return (
     <section>

@@ -1,3 +1,5 @@
+//로그인 전 / 후 두 개의 화면으로 보일 수 있도록 코드 작성해보았으나 아직 로그인 화면이 만들어지지 않아서 생략
+
 'use client';
 
 import { navOptions } from '@/utils';
@@ -41,6 +43,7 @@ function NavItems({ isModalView = false, isAdminView, router }) {
   );
 }
 
+
 export default function Navbar() {
   
 
@@ -78,9 +81,9 @@ export default function Navbar() {
                   className={
                     'mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white'
                   }
-                  onClick={() => router.push('/header/notice')} 
+                  onClick={() => router.push('/header/info')} 
                 >
-                  Notice
+                  info
                 </button>
                 <button
                   className={
