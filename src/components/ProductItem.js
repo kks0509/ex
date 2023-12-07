@@ -1,10 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import React from 'react'
+
+
 
 export default function ProductItem({ product }) {
   return (
     <div className="card">
-      <Link href={`/product/${product.id}`}>    
+      <Link href={`/product/${product.id}`}>
         <Image
           src={product.image}
           width={400}
@@ -15,9 +18,10 @@ export default function ProductItem({ product }) {
       </Link>
       <div className="flex flex-col items-center justify-center p-5">
         <Link href={`/product/${product.id}`}>
-          <h2 className="text-lg font-bold"> {product.name} </h2>
+          <h2 className="text-lg">{product.name}</h2>
         </Link>
-        <p> {product.price}₩</p>
+        <p className="mb-2">{product.brand}</p>
+        <p>${product.price}</p>
       </div>
     </div>
   )
