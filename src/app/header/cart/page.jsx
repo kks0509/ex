@@ -3,7 +3,6 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import ComponentLevelLoader from "../Loader/componentlevel";
 
 export default function CommonCart({
   cartItems = [],
