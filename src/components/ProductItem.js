@@ -2,8 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-
-
 export default function ProductItem({ product }) {
   return (
     <div className="card">
@@ -20,8 +18,19 @@ export default function ProductItem({ product }) {
         <Link href={`/product/${product.id}`}>
           <h2 className="text-lg">{product.name}</h2>
         </Link>
-        <p className="mb-2">{product.brand}</p>
-        <p>${product.price}</p>
+        <div className="flex flex-col items-center mt-2">
+          <p className={`text-lg ${product.onSale === "yes" ? "line-through" : ""}`}>
+            {product && product.price}₩
+          </p>
+          {product.onSale === "yes" && (
+            <p className="text-base font-bold text-red-700">
+              {(
+                product.price -
+                product.price * (product.priceDrop / 100)
+              )}₩
+            </p>
+          )}
+        </div>
       </div>
     </div>
   )

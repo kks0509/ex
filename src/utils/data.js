@@ -1,14 +1,14 @@
 //남성&여성 의류 목록
 export const data = {
 
-    product_man: [
+    product: [
       {
         id: '1',
         name: '터틀넥 Brown',
         image: '/man1.jpg',
-        price: '35,000',
-        countInStock: 10,
-        rating: 4.5,
+        price: 35000,
+        onSale: 'yes',
+        priceDrop: 10,
         numReviews: 10,
         description: '보온성이 뛰어난 겨울 필수템',
       },
@@ -16,9 +16,9 @@ export const data = {
         id: '2',
         name: '베이직 푸퍼 패딩 Black',
         image: '/man2.jpg',
-        price: '89,000',
-        countInStock: 0,
-        rating: 4.0,
+        price: 89000,
+        onSale: 'yes',
+        priceDrop: 10,
         numReviews: 10,
         description: '한겨울에도 따듯한 패딩',
       },
@@ -27,7 +27,7 @@ export const data = {
         name: 'YALE HOODLE GRAY',
         image: '/man3.jpg',
         price: '29,900',
-        countInStock: 15,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 14,
         description: '예일대 학생인척 할 수 있는 후드티',
@@ -37,7 +37,7 @@ export const data = {
         name: 'Fallet 티셔츠 White ',
         image: '/man4.jpg',
         price: '17,800',
-        countInStock: 5,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 10,
         description: '고양이가 포인트인 티셔츠',
@@ -47,7 +47,7 @@ export const data = {
         name: '라운드 니트 Light Green',
         image: '/man5.jpg',
         price: '35,000',
-        countInStock: 15,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 14,
         description: '부드러운 라운드 니트',
@@ -57,7 +57,7 @@ export const data = {
         name: '와이드 연청 데님 팬츠 ',
         image: '/man6.jpg',
         price: '35,900',
-        countInStock: 13,
+        onSale: 'no',
         rating: 4.1,
         numReviews: 12,
         description: '사계절용',
@@ -67,7 +67,7 @@ export const data = {
         name: '캐시미어 블렌드 발마칸 코트 Black ',
         image: '/man7.jpg',
         price: '289,900',
-        countInStock: 15,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 14,
         description: '얼죽코를 위한 코트',
@@ -77,7 +77,7 @@ export const data = {
         name: 'ZIP-UP KNIT NAVY ',
         image: '/man8.jpg',
         price: '56,800',
-        countInStock: 5,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 10,
         description: '투웨이 집업',
@@ -87,7 +87,7 @@ export const data = {
         name: '화이트라벨 노벨티 눕시 다운 자켓',
         image: '/man9.jpg',
         price: '359,900',
-        countInStock: 10,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 10,
         description: 'MZ가 되고싶다면 당장 사라',
@@ -97,7 +97,7 @@ export const data = {
         name: ' T-Logo Hoodie Black ',
         image: '/man10.jpg',
         price: '59,850',
-        countInStock: 0,
+        onSale: 'yes',
         rating: 4.0,
         numReviews: 10,
         description: '디스이즈네버댓',
@@ -107,7 +107,7 @@ export const data = {
         name: ' 버핑레더 오버핏 블루종 Suede Brown',
         image: '/man11.jpg',
         price: '57,700',
-        countInStock: 15,
+        onSale: 'no',
         rating: 4.5,
         numReviews: 14,
         description: '꾸안꾸로 딱인 자켓',
@@ -182,12 +182,8 @@ export const data = {
         numReviews: 10,
         description: 'Lee 로고가 포인트인 맨투맨 ',
       },
-    ],
-
-    //여성 의류
-    product_woman: [
         {
-          id: '1',
+          id: '19',
           name: '어그슬리퍼',
           image: '/woman1.jpg',
           price: '73,400',
@@ -197,7 +193,7 @@ export const data = {
           description: '한겨울에도 따듯한 슬리퍼',
         },
         {
-          id: '2',
+          id: '20',
           name: '플리스자켓 Ivory',
           image: '/woman2.jpg',
           price: '39,900',
@@ -207,7 +203,7 @@ export const data = {
           description: '아방한 핏으로 귀여움 연출 가능',
         },
         {
-          id: '3',
+          id: '21',
           name: '글로시 크롭 푸퍼 자켓 실버',
           image: '/woman3.jpg',
           price: '55,500',
@@ -217,7 +213,7 @@ export const data = {
           description: '크롭이니 참고하시기 바랍니다',
         },
         {
-          id: '4',
+          id: '22',
           name: '비건 스웨이이드 집업 자켓 브라운',
           image: '/woman4.jpg', 
           price: '34,900', 
@@ -227,7 +223,7 @@ export const data = {
           description: '투웨이 집업',
         },
         {
-          id: '5',
+          id: '23',
           name: ' Velour Soccer Jersey Black',
           image: '/woman5.jpg',
           price: '65,200',
@@ -237,7 +233,7 @@ export const data = {
           description: '멋쟁이 숙녀들을 위한 맨두맨',
         },
         {
-          id: '6',
+          id: '24',
           name: ' THUNDER 브러쉬드 니트  핑크',
           image: '/woman6.jpg',
           price: '36,800',
@@ -247,7 +243,7 @@ export const data = {
           description: '사이즈 FREE',
         },
         {
-          id: '7',
+          id: '25',
           name: '니트탑 Black',
           image: '/woman7.jpg',
           price: '24,600',
@@ -257,7 +253,7 @@ export const data = {
           description: '사이즈 FREE',
         },
         {
-          id: '8',
+          id: '26',
           name: '키르시 체리 맨투맨 IVORY,',
           image: '/woman8.jpg',
           price: '34,500',
@@ -267,7 +263,7 @@ export const data = {
           description: '사이즈 FREE',
         },
         {
-          id: '9',
+          id: '27',
           name: '핑크 카고 팬츠',
           image: '/woman9.jpg',
           price: '24,900',
@@ -277,7 +273,7 @@ export const data = {
           description: '블랙핑크 제니 착용',
         },
         {
-          id: '10',
+          id: '27',
           name: '트레이닝 스커트 IVORY',
           image: '/woman10.jpg',
           price: '23,500',
@@ -287,7 +283,7 @@ export const data = {
           description: '아이브 장원영 착용',
         },
         {
-          id: '11',
+          id: '28',
           name: '트레이닝 팬츠 Black',
           image: '/woman11.jpg',
           price: '19,900',
@@ -297,7 +293,7 @@ export const data = {
           description: '재고 5개 남음',
         },
         {
-          id: '12',
+          id: '29',
           name: '브라운 스커트팬츠',
           image: '/woman12.jpg', 
           price: '25,100', 
@@ -307,7 +303,7 @@ export const data = {
           description: '구매시 양말 증정',
         },
         {
-          id: '13',
+          id: '30',
           name: '버킷햇 White',
           image: '/woman13.jpg',
           price: '26,900',
@@ -317,7 +313,7 @@ export const data = {
           description: '세탁 주의',
         },
         {
-          id: '14',
+          id: '31',
           name: 'Type Service Web 모자',
           image: '/woman14.jpg',
           price: '31,900',
@@ -327,7 +323,7 @@ export const data = {
           description: '교환 환불 금지',
         },
         {
-          id: '15',
+          id: '32',
           name: '우포스 쪼리 Black',
           image: '/woman15.jpg',
           price: '49,900',
@@ -337,7 +333,7 @@ export const data = {
           description: '단독세일중',
         },
         {
-          id: '16',
+          id: '33',
           name: '춘식이 룸부츠',
           image: '/woman16.jpg',
           price: '39,900',
@@ -347,7 +343,7 @@ export const data = {
           description: '집에서도 따듯한 룸부츠',
         },
         {
-          id: '17',
+          id: '34',
           name: '장갑 Blue',
           image: '/woman17.jpg',
           price: '14,500',
@@ -357,7 +353,7 @@ export const data = {
           description: '손목까지 감싸 따듯한 장갑',
         },
         {
-          id: '18',
+          id: '35',
           name: '크롭 가디건',
           image: '/woman18.jpg',
           price: '19,900',
@@ -365,6 +361,69 @@ export const data = {
           rating: 4.5,
           numReviews: 10,
           description: '르세라핌 홍은채 착용',
+        },
+        {
+          id: '36',
+          name: 'Female Hoodie Crop top with Mask',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/5ae4337c11464ccda6050085e4878cf0/embed?ui_theme=dark&dnt=1',
+        },
+        {
+          id: '37',
+          name: 'Pencil Skirt Sleeveless Dress',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/0a035326ed6c403183a407baec543604/embed?ui_theme=dark',
+        },
+        {
+          id: '38',
+          name: 'Female Turtle-neck one piece',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/9f471178fe004dc180fc612736182100/embed',
+        },
+        {
+          name: 'Outer / Jumper / Down Jacket',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/de1f1663c8b346ca999247504e9cd605/embed',
+        },
+        {
+          name: 'Armjak. 19th century.',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/c5a53cf7ffe046e0973590ed6f139da3/embed',
+        },
+        {
+          name: 'Men Short Sleeved Solid Color Polo',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/670dad551f4243e39f116f5e5e038a5e/embed',
+        },
+        {
+          name: 'Sage Collection: Cargo Pants',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/ba7b2a55f4f04164bc087ab87322317a/embed',
+        },
+        {
+          name: 'Men Long Sleeved Collar Stand Polo',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/cbcff5c160854e83a689572d1e3fde83/embed',
+        },
+        {
+          name: 'Jacket',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/b82c3b5584114a40b6d7e028f680c1d0/embed',
+        },
+        {
+          name: 'LEATHER JACKET',
+          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
+          modelSrc:
+            'https://sketchfab.com/models/9ae7c88201eb42cdbb072d551c89d042/embed',
         },
       ],
   }

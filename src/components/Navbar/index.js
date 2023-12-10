@@ -89,13 +89,11 @@ export default function Navbar() {
                   className={
                     'mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white'
                   }
-                  onClick={() => router.push('/header/cart')} 
+                  onClick={() => router.push('/pages/basket')} 
                 >
                   Cart
                 </button>
               </Fragment>
-
-
               <button
                 onClick={() => router.push('/header/logout')}
                 className={
@@ -113,7 +111,6 @@ export default function Navbar() {
               >
                 Login
               </button>
-
             
           </div>
           <NavItems router={router} isAdminView={isAdminView} />

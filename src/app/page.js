@@ -14,12 +14,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-100">
-              <div className="max-w-screen-6xl px-4 py-8 mx-auto sm:py-12 sm:px-6 lg:px-8">
-              <img
-                  src="event.jpg"
-                  className='w-full h-full object-cover'
-                />
-        </div>
+
       <section className="">
         <div className="grid max-w-screen-xl px-4 py-8 mx-suto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
           <div className="mr-auto place-self-center lg:col-span-7">

@@ -11,14 +11,9 @@ export const navOptions = [
     path: '/product/products', //혹시 모를 이름 중복 방지 (Product/products)
   },
   {
-    id: 'Man',
-    label: 'Man',
+    id: 'Clothes',
+    label: 'Clothes',
     path: '/product/man',
-  },
-  {
-    id: 'Woman',
-    label: 'Woman',
-    path: '/product/woman',
   },
   {
     id: 'Chat',
