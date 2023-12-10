@@ -30,6 +30,19 @@ export default function Info() {
             </h1>
           </div>
         </a>
+
+        <a href="/product/info/page3" className="w-full block col-span-3 shadow-2xl">
+          <div className="relative overflow-hidden">
+            <img
+              src="/event3.jpg"
+              alt="event1"
+              className="transform hover:scale-125 transition duration-2000 ease-out"
+            />
+            <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-black rounded-md px-2">
+              팀원 소개
+            </h1>
+          </div>
+        </a>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { data } from '@/utils/data'
 export default function Home() {
   const { product } = data
 
-  const saleProducts = product.slice(46);
+  const saleProducts = product.slice(36);
   return (
     <div>
       {/* 영역 1: Sale */}

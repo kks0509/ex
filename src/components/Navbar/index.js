@@ -1,8 +1,7 @@
 //로그인 전 / 후 두 개의 화면으로 보일 수 있도록 코드 작성해보았으나 아직 로그인 화면이 만들어지지 않아서 생략
-
 'use client';
 
-import { navOptions } from '@/utils/data';
+import { navOptions } from '@/utils';
 import { Fragment } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -51,14 +50,6 @@ export default function Navbar() {
   const router = useRouter();
 
 
-  function handleLogout() {
-    setIsAuthUser(false);
-    setUser(null);
-    Cookies.remove('token');
-    localStorage.clear();
-    router.push('/');
-  }
-
   //cart랑 account만 페이지 생성하기 나머지는 백앤드가(로그인/로그아웃)
   const isAdminView = pathName.includes('admin-view');
 
@@ -89,7 +80,7 @@ export default function Navbar() {
                   className={
                     'mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white'
                   }
-                  onClick={() => router.push('/compoenets/CommonCart')} 
+                  onClick={() => router.push('/header/cart')} 
                 >
                   Cart
                 </button>
