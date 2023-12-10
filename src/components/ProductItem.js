@@ -31,6 +31,7 @@ export default function ProductItem({ product }) {
             </p>
           )}
         </div>
+
       </div>
     </div>
   )

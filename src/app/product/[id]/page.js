@@ -19,7 +19,7 @@ export default function ProductDetailPage({ params: { id } }) {
             <div className="lg:flex lg:items-start">
               <div className="lg:order-2 lg:ml-5">
               <button
-                onClick={() => router.push('/product/man')}
+                onClick={() => router.push('/')}
                 className={
                   'mt-1 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white'
                 }
