@@ -2,7 +2,7 @@
 
 'use client';
 
-import { navOptions } from '@/utils';
+import { navOptions } from '@/utils/data';
 import { Fragment } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 
@@ -89,7 +89,7 @@ export default function Navbar() {
                   className={
                     'mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white'
                   }
-                  onClick={() => router.push('/header/cart')} 
+                  onClick={() => router.push('/compoenets/CommonCart')} 
                 >
                   Cart
                 </button>
@@ -113,7 +113,7 @@ export default function Navbar() {
               </button>
             
           </div>
-          <NavItems router={router} isAdminView={isAdminView} />
+          <NavItems router={router}  />
         </div>
       </nav>
 
