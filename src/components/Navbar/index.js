@@ -89,7 +89,7 @@ export default function Navbar() {
                   className={
                     'mt-1.5 inline-block bg-black px-5 py-3 text-xs font-medium upprcase tracking-wide text-white'
                   }
-                  onClick={() => router.push('/pages/basket')} 
+                  onClick={() => router.push('/header/cart')} 
                 >
                   Cart
                 </button>

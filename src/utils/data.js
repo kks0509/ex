@@ -360,86 +360,7 @@ export const data = {
           numReviews: 10,
           description: '르세라핌 홍은채 착용',
         },
-        {
-          id: '36',
-          name: 'Female Hoodie Crop top with Mask',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/5ae4337c11464ccda6050085e4878cf0/embed?ui_theme=dark&dnt=1',
-          image: '/36.jpg',
-        },
-        {
-          id: '37',
-          name: 'Pencil Skirt Sleeveless Dress',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/0a035326ed6c403183a407baec543604/embed?ui_theme=dark',
-          image: '/37.jpg',
-        },
-        {
-          id: '38',
-          name: 'Female Turtle-neck one piece',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/9f471178fe004dc180fc612736182100/embed',
-          image: '/38.jpg',
-        },
-        {
-          id: '39',
-          name: 'Outer / Jumper / Down Jacket',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/de1f1663c8b346ca999247504e9cd605/embed',
-          image: '/39.jpg',
-        },
-        {
-          id: '40',
-          name: 'Armjak. 19th century.',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/c5a53cf7ffe046e0973590ed6f139da3/embed',
-          image: '/40.jpg',
-        },
-        {
-          id: '41',
-          name: 'Men Short Sleeved Solid Color Polo',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/670dad551f4243e39f116f5e5e038a5e/embed',
-          image: '/41.jpg',
-        },
-        {
-          id: '42',
-          name: 'Sage Collection: Cargo Pants',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/ba7b2a55f4f04164bc087ab87322317a/embed',
-          image: '/42.jpg',
-        },
-        {
-          id: '43',
-          name: 'Men Long Sleeved Collar Stand Polo',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/cbcff5c160854e83a689572d1e3fde83/embed',
-          image: '/43.jpg',
-        },
-        {
-          id: '44',
-          name: 'Jacket',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/b82c3b5584114a40b6d7e028f680c1d0/embed',
-          image: '/44.jpg',
-        },
-        {
-          id: '45',
-          name: 'LEATHER JACKET',
-          price: `${Math.floor(Math.random() * (100000 - 30000 + 1)) + 30000}`,
-          modelSrc:
-            'https://sketchfab.com/models/9ae7c88201eb42cdbb072d551c89d042/embed',
-          image: '/45.jpg',
-        },
+        
         {
           id: '119',
           name: '스튜디오 하트 기모 오버후디',
@@ -513,7 +434,7 @@ export const data = {
         {
           id: '118',
           name: '하버드 우모 퍼 슬리퍼 방한 샌들 베이지',
-          image: '/sale118.jpg',
+          image: '/sale8.jpg',
           price: 35000,
           onSale: 'yes',
           priceDrop: 7,

@@ -18,7 +18,7 @@ export default function Info() {
         </a>
 
         {/* 다른 이미지에 대한 링크 */}
-        <a href="/app/header/info/content/page2" className="w-full block col-span-3 shadow-2xl">
+        <a href="/product/info/page2" className="w-full block col-span-3 shadow-2xl">
           <div className="relative overflow-hidden">
             <img
               src="/event.jpg"

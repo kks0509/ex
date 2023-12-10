@@ -40,6 +40,7 @@ export default function Home() {
         </div>
         <div className="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 sm:py-12 lg:px-8">
           <div className="text-center">
+            
             <h2 className="text-xl font-bold text-gray-950 sm:text-5xl">
               CATEGORY
             </h2>
