@@ -18,6 +18,10 @@ export default function page3() {
           깃허브 주소: https://github.com/kks0509{' '}
           <br />
         </Link>
+        <Link href="https://portfolio-main-omega.vercel.app/">
+          vercel 주소: https://portfolio-main-omega.vercel.app/{' '}
+          <br />
+        </Link>
       </ul>
 
       <h1 className="text_header mt-4">91812543 송명석</h1>
