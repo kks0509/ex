@@ -37,7 +37,7 @@ export default function ShippingAddressPage() {
         className="mx-auto max-w-screen-md"
         onSubmit={handleSubmit(submitHandler)}
       >
-        <h1 className="mb-4 text-xl">Payment Method</h1>
+        <h1 className="mb-4 text-7xl font-bold">Payment Method</h1><br></br><br></br>
         {['Card', 'Deposit', 'CashOnDelivery'].map((payment) => (
           <div key={payment} className="mb-4">
             <input
@@ -60,7 +60,7 @@ export default function ShippingAddressPage() {
           <div className="text-red-500 ">{errors.paymentMethod.message}</div>
         )}
         <div className="mb-4 flex justify-between">
-          <button className="primary-button">Next</button>
+          <button className="primary-button">Go to Buy!</button>
         </div>
       </form>
     </div>
