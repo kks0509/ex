@@ -20,13 +20,19 @@ export default function CartPage() {
   }
 
   return (
-    <div>
-      <h1 className="mb-4 text-xl">Shopping Cart</h1>
+    <div className="py-5 px-2 text-center font-bold text-2xl">
+      <h1 className="text-7xl md:text-16xl font-bold py-10">Shopping Cart</h1>
       {loading ? (
         <div>Loading...</div>
       ) : cartItems.length === 0 ? (
         <div>
-          Cart is empty. <Link href="/">Go shopping</Link>
+          Oops...!<br></br>Cart is empty... 
+          <br></br>  <br></br><br></br>              
+          <button
+          onClick={() => router.push('/')}
+          className="mt-1.5 inline-block bg-gray-700 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
+          Back to Page
+          </button>
         </div>
       ) : (
         <div className="grid md:grid-cols-4 md:gap-5">
@@ -72,7 +78,7 @@ export default function CartPage() {
                         ))}
                       </select>
                     </td>
-                    <td className="p-5 text-right">${item.price}</td>
+                    <td className="p-5 text-right">{item.price}₩</td>
                     <td className="p-5 text-center">
                       <button
                         className="default-button"
@@ -91,8 +97,8 @@ export default function CartPage() {
               <ul>
                 <li>
                   <div className="pb-3 text-xl">
-                    Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)}) : $
-                    {itemsPrice}
+                    Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)}) : 
+                    {itemsPrice}₩
                   </div>
                 </li>
                 <li>

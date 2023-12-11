@@ -1,8 +1,9 @@
+
+import ProductRate from './ProductRate';
+import AddToCart from './AddToCart';
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import ProductRate from './ProductRate'
-import AddToCart from './AddToCart'
 
 export default function ProductItem({ product }) {
   return (
@@ -21,8 +22,19 @@ export default function ProductItem({ product }) {
           <h2 className="text-lg">{product.name}</h2>
         </Link>
         <ProductRate rate={product.rating} count={product.numReviews} />
-        <p className="mb-2">{product.brand}</p>
-        <p>${product.price}</p>
+        <div className="flex flex-col items-end text-centers">
+          <p className={`${product.onSale === "yes" ? "line-through" : ""}`}>
+            {product && product.price}₩
+          </p>
+          {product.onSale === "yes" && (
+            <p className="text-lg font-bold text-red-700">
+              {(
+                product.price -
+                product.price * (product.priceDrop / 100)
+              )}₩
+            </p>
+          )}
+        </div>
         <AddToCart
           showQty={false}
           product={product}

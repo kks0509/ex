@@ -33,12 +33,12 @@ export default function CartSidebar() {
       {loading ? (
         <div className="py-5 px-2">Loading...</div>
       ) : cartItems.length === 0 ? (
-        <div className="py-5 px-2">Cart is empty</div>
+        <div className="py-5 px-2 text-center font-bold text-3xl">Cart is empty</div>
       ) : (
         <>
           <div className="p-2 flex flex-col items-center border-b border-b-gary-600">
             <div>subtotal</div>
-            <div className="font-bold text-orange-700">${itemsPrice}</div>
+            <div className="font-bold text-orange-700">{itemsPrice}₩</div>
             <div>
               <Link
                 href="/cart"

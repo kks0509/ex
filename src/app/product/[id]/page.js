@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 
 
 export default function ProductDetailPage({ params: { id } }) {
-  const router = useRouter();
+  const router = useRouter(); 
   const product = data.product.find((x) => x.id === id)
   if (!product) {
     return <div>Product Not Found</div>
@@ -82,10 +82,10 @@ export default function ProductDetailPage({ params: { id } }) {
               </div>
               <button
               type="button"
-              onClick={() => router.push('/header/cart')}
+              onClick={() => router.push('/cart')}
               className="mt-30 inline-block bg-gray-700 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
             >
-              Add to cart
+              Go to cart
             </button>
             </div>
             <ul className="mt-8 space-y-2">

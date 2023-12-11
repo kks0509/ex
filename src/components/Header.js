@@ -9,17 +9,34 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex justify-between items-center h-12 px-4 shadow-md bg-gray-800 text-white">
-        <Link href="/" className="text-lg font-bold">
-          Amazon Shopping Cart
+      <nav className="flex justify-between items-center h-12 px-10 shadow-md bg-white text-black">
+      <Link href="/" className="text-3xl font-bold">
+          ZPG
         </Link>
+        <div className="flex space-x-20">
+        <Link href="/product/man" className="text-lg font-bold">
+          Man
+        </Link>
+        <Link href="/product/woman" className="text-lg font-bold">
+          Woman
+        </Link>
+        <Link href="/product/sale" className="text-lg font-bold">
+          Sale
+        </Link>
+        <Link href="/product/products" className="text-lg font-bold">
+          Product
+        </Link>
+        <Link href="/header/info" className="text-lg font-bold">
+          Info
+        </Link>
+        </div>
         <div>
           <span className="cart-badge">
             {loading ? '' : cartItems.reduce((a, c) => a + c.qty, 0)}
           </span>
           <Link href="/cart" className="flex justify-between items-end">
             <svg
-              fill="#ffffff"
+              fill="black"
               viewBox="100 120 200 280"
               width="40px"
               height="40px"
