@@ -139,7 +139,7 @@ export default function PlaceOrderScreen() {
                 </li>
                 <li>
                   <button
-                    onClick={() => alert('Not implemented')}
+                    onClick={() => window.location.href=('https://buy.stripe.com/test_eVa9Be6rr4Nd8lW7ss')}
                     className="primary-button w-full"
                   >
                     Place Order
