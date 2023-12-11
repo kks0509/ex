@@ -28,10 +28,10 @@ export default function Home() {
 
             <button
               type="button"
-              onClick={() => router.push('/product/products')}
+              onClick={() => router.push('/header/info')}
               className="mt-30 inline-block bg-gray-700 px-5 py-3 text-xs font-medium uppercase tracking-wide text-white"
             >
-              go shopping
+              About us
             </button>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
