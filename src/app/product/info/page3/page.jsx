@@ -43,6 +43,13 @@ export default function page3() {
           <br />
         </Link>
       </ul>
+      <h1 className="text_header mt-4">페이지 영상</h1>
+      <ul className=" 'mt-1.5 inline-block bg-black px-25 py-35 text-xs font-medium upprcase tracking-wide text-white">
+        <Link href="https://www.youtube.com/watch?v=sP4R_JWRJ-U">
+          유튜브 업로드: https://www.youtube.com/watch?v=sP4R_JWRJ-U{' '}
+          <br />
+        </Link>
+      </ul>
 
     </div>
   )
